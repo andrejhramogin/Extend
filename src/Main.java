@@ -14,5 +14,9 @@ public class Main {
 
         System.out.println("c is: " + c.getIsMulticellular());
 
+        Animal d = new MultiCellularAnimals();
+
+        System.out.println("d is: " + d.getIsMulticellular());
+
     }
 }

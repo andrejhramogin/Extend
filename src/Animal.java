@@ -2,6 +2,8 @@ public class Animal {
 
     private boolean isMulticellular;
 
+    //TODO add two new parameters for Animal
+
     public boolean getIsMulticellular() {
         return isMulticellular;
     }
@@ -9,5 +11,7 @@ public class Animal {
     public void setMulticellular(boolean a) {
         isMulticellular = a;
     }
+
+    //TODO Add setters and getters to properties
 
 }

@@ -9,5 +9,9 @@ public class Main {
         MultiCellularAnimals b = new MultiCellularAnimals();
 
         System.out.println("b is: "+ b.getIsMulticellular());
+
+        Animal c = new MultiCellularAnimals();
+
+        System.out.println("c is: "+ c.getIsMulticellular());
     }
 }

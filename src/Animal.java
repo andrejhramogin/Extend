@@ -1,6 +1,8 @@
 public class Animal {
 
     private boolean isMulticellular;
+    private boolean isConsumer;
+    private boolean isPhotosynthetic;
 
     //TODO add two new parameters for Animal
 
@@ -8,8 +10,24 @@ public class Animal {
         return isMulticellular;
     }
 
-    public void setMulticellular(boolean a) {
+    public void setIsMulticellular(boolean a) {
         isMulticellular = a;
+    }
+
+    public boolean getIsConsumer(){
+        return isConsumer;
+    }
+
+    public void setIsConsumer (boolean b){
+        isConsumer = b;
+    }
+
+    public boolean getIsPhotosynthetic(){
+        return isPhotosynthetic;
+    }
+
+    public void setIspPhotosynthetic(boolean c){
+        isPhotosynthetic = c;
     }
 
     //TODO Add setters and getters to properties

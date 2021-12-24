@@ -11,6 +11,8 @@ public class ArrayMain {
         array3[5] = 777;
 
         int[] array2 = new int[9];
+        array2[0] = 10;
+        array2[1] = 12;
 
         System.out.println("array3: " + array3);
         System.out.println("array2: " + array2.toString());
@@ -18,6 +20,8 @@ public class ArrayMain {
         Utils.arrayPrint(array3);
         System.out.println();
         Utils.arrayPrint(array2);
+
+        System.out.println(Utils.arraySum(array3));
 
     }
 }

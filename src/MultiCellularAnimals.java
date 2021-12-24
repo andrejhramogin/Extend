@@ -9,6 +9,9 @@ public class MultiCellularAnimals extends Animal {
         setIsMulticellular(true);
         setIsConsumer(true);
         setIspPhotosynthetic(false);
+
+        setIsBreeding(true);
+        setIsUnicellular(false);
     }
 
     //TODO Add setters and getters to properties

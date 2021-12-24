@@ -17,4 +17,24 @@ public class Utils {
         return sum;
     }
 
+    public static int arrayMax(int[] array){
+        //TODO Implement function thar return max value of array
+    }
+
+    public static int arrayMin(int[] array){
+        //TODO Implement function thar return min value of array
+    }
+
+    public static int[] arrayDefault(int defaultValue) {
+        //TODO Implement function thar return array where all elements init by default value
+    }
+
+    public static int[] arrayConcat(int[] firstArray, int[] secondArray) {
+        //TODO Implement function thar return array contain element both array
+    }
+
+    public static int[] arraySort(int[] array) {
+        //TODO Implement function thar return array contain element both array
+    }
+
 }

@@ -14,6 +14,8 @@ public class ArrayMain {
         array2[0] = 10;
         array2[1] = 12;
 
+        //TODO init several array by different ways
+
         System.out.println("array3: " + array3);
         System.out.println("array2: " + array2.toString());
 
@@ -22,6 +24,8 @@ public class ArrayMain {
         Utils.arrayPrint(array2);
 
         System.out.println(Utils.arraySum(array3));
+
+        //TODO print result all implemented methods
 
     }
 }

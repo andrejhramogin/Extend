@@ -26,6 +26,10 @@ public class Animal {
         return isPhotosynthetic;
     }
 
+    public void setIspPhotosynthetic(boolean c){
+        isPhotosynthetic = c;
+    }
+
     //TODO Add setters and getters to properties
 
 }

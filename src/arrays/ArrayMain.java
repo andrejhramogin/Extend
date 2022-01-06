@@ -29,8 +29,8 @@ public class ArrayMain {
         int i;
         for (i = 0; i < 10; i++)
             newArray1[i] = i;
-     //   for (i = 0; i < 10; i++)
-     //       System.out.println("index [" + i + "] = " + newArray1[i]);
+        //   for (i = 0; i < 10; i++)
+        //       System.out.println("index [" + i + "] = " + newArray1[i]);
         Utils.arrayPrint(newArray1);
         System.out.println("Array sum: " + Utils.arraySum(newArray1));
         System.out.println("Array max value: " + Utils.arrayMax(newArray1));
@@ -48,20 +48,41 @@ public class ArrayMain {
         newArray2[6] = 3;
         newArray2[7] = 1;
 
-        Utils.arrayPrint(newArray2);
+        Utils.arrayPrint2(newArray2);
         System.out.println("Array sum: " + Utils.arraySum(newArray2));
         System.out.println("Array max value: " + Utils.arrayMax(newArray2));
         System.out.println("Array min value: " + Utils.arrayMin(newArray2));
 
         System.out.println();
 
-        int newArray3[] = {22, 45, -5, 78, -5, 678, 0, 99, 100};
-        Utils.arrayPrint(newArray3);
+        int newArray3[] = {22, 45, -55, 78, -5, 678, 0, 99, 100};
+        Utils.arrayPrint2(newArray3);
         System.out.println("Array sum: " + Utils.arraySum(newArray3));
         System.out.println("Array max value: " + Utils.arrayMax(newArray3));
         System.out.println("Array min value: " + Utils.arrayMin(newArray3));
+        Utils.arraySort(newArray3);//sorting
+        System.out.print("Array after sorting: ");
+        for (int index = 0; index < newArray3.length; index++) {
+            System.out.print(" " + newArray3[index]);
+        }
 
-        //TODO print result all implemented methods
+        System.out.println();
+        System.out.println();
 
-    }
+            int arrayMulti1[][] = new int[2][3];
+            int v, h;
+            for (v = 0; v < 2; v++) {
+                h = 0;
+                while (h < 3) {
+                    arrayMulti1[v][h] = h;
+                    System.out.println("[" + v + " : " + h + "] = " + h);
+                    h++;
+                }
+            }
+
+
+            //TODO print result all implemented methods
+
+        }
+
 }

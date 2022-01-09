@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.Arrays;
+
 //import org.jetbrains.annotations.NotNull;
 
 public class ArrayMain {
@@ -69,20 +71,41 @@ public class ArrayMain {
         System.out.println();
         System.out.println();
 
-            int arrayMulti1[][] = new int[2][3];
-            int v, h;
-            for (v = 0; v < 2; v++) {
-                h = 0;
-                while (h < 3) {
-                    arrayMulti1[v][h] = h;
-                    System.out.println("[" + v + " : " + h + "] = " + h);
-                    h++;
-                }
+        int arrayMulti1[][] = new int[2][3];
+        int v, h;
+        for (v = 0; v < 2; v++) {
+            h = 0;
+            while (h < 3) {
+                arrayMulti1[v][h] = h;
+                System.out.println("[" + v + " : " + h + "] = " + h);
+                h++;
             }
-
-
-            //TODO print result all implemented methods
-
         }
 
+        System.out.println();
+
+        int[] array1 = {1, 2, 3, 4, 5};
+        int[] array2 = {6, 7, 8, 9, 10, 11, 12, 13, 14};
+        int[] arrayUnificating = new int[array1.length + array2.length];
+        for (i = 0; i < array1.length; i++) {
+            arrayUnificating[i] = array1[i];
+        }
+        int a;
+        a = array1.length;
+        while (a <= array2.length) {
+            for (i = 0; i < array2.length; i++) {
+                arrayUnificating[a] = array2[i];
+                a ++;
+            }
+        }
+        System.out.println(Arrays.toString(arrayUnificating));
+
+
+        int arrayOne[] = {1, 2, 3, 4, 5, 6, 7};
+        int arrayTwo[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+        int arrayUnificating2[] = Utils.arrayConcat(arrayOne, arrayTwo);
+        System.out.println(Arrays.toString(arrayUnificating2));
+
+        //TODO print result all implemented methods
+    }
 }

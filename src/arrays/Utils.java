@@ -52,21 +52,21 @@ public class Utils {
         for (int index = 0; index < firstArray.length; index++) {
             arrayConcat[index] = firstArray[index];
         }
-        int a;
-        a = firstArray.length;
-        while (a <= secondArray.length) {
-            for (int index = 0; index < secondArray.length; index++) {
-                arrayConcat[a] = secondArray[index];
-                a++;
-            }
+        int a = firstArray.length;
+
+        for (int index = 0; index < secondArray.length; index++) {
+            arrayConcat[a] = secondArray[index];
+            a++;
         }
+
         return arrayConcat;
     }
 
     public static void arraySort(int[] array) {
         //TODO Implement function thar return array contain element both array
         int a, b, c;
-        for (a = 0; a < array.length; a++)
+
+        for (a = 0; a < array.length; a++) {
             for (b = array.length - 1; b > a; b--) {
                 if (array[b - 1] > array[b]) {
                     c = array[b - 1];
@@ -74,7 +74,15 @@ public class Utils {
                     array[b] = c;
                 }
             }
-
+        }
     }
 
+    public static int[] arrayDefault (int[] array, int defaultValue){
+        for (int a=0; a<array.length; a++){
+            array[a]= defaultValue;
+        }
+        return array;
+    }
 }
+
+

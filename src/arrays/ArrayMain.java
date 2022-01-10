@@ -28,14 +28,22 @@ public class ArrayMain {
         //TODO init several array by different ways
 
         int newArray1[] = new int[10];
+
         int i;
-        for (i = 0; i < 10; i++)
+
+        for (i = 0; i < 10; i++) {
             newArray1[i] = i;
+        }
+
         //   for (i = 0; i < 10; i++)
         //       System.out.println("index [" + i + "] = " + newArray1[i]);
+
         Utils.arrayPrint(newArray1);
+
         System.out.println("Array sum: " + Utils.arraySum(newArray1));
+
         System.out.println("Array max value: " + Utils.arrayMax(newArray1));
+
         System.out.println("Array min value: " + Utils.arrayMin(newArray1));
 
         System.out.println();
@@ -51,20 +59,30 @@ public class ArrayMain {
         newArray2[7] = 1;
 
         Utils.arrayPrint2(newArray2);
+
         System.out.println("Array sum: " + Utils.arraySum(newArray2));
+
         System.out.println("Array max value: " + Utils.arrayMax(newArray2));
+
         System.out.println("Array min value: " + Utils.arrayMin(newArray2));
 
         System.out.println();
 
         int newArray3[] = {22, 45, -55, 78, -5, 678, 0, 99, 100};
         Utils.arrayPrint2(newArray3);
+
         System.out.println("Array sum: " + Utils.arraySum(newArray3));
+
         System.out.println("Array max value: " + Utils.arrayMax(newArray3));
+
         System.out.println("Array min value: " + Utils.arrayMin(newArray3));
+
         Utils.arraySort(newArray3);//sorting
+
         System.out.print("Array after sorting: ");
+
         for (int index = 0; index < newArray3.length; index++) {
+
             System.out.print(" " + newArray3[index]);
         }
 
@@ -85,8 +103,11 @@ public class ArrayMain {
         System.out.println();
 
         int[] array1 = {1, 2, 3, 4, 5};
+
         int[] array2 = {6, 7, 8, 9, 10, 11, 12, 13, 14};
+
         int[] arrayUnificating = new int[array1.length + array2.length];
+
         for (i = 0; i < array1.length; i++) {
             arrayUnificating[i] = array1[i];
         }
@@ -95,14 +116,15 @@ public class ArrayMain {
         while (a <= array2.length) {
             for (i = 0; i < array2.length; i++) {
                 arrayUnificating[a] = array2[i];
-                a ++;
+                a++;
             }
         }
         System.out.println(Arrays.toString(arrayUnificating));
 
-
         int arrayOne[] = {1, 2, 3, 4, 5, 6, 7};
+
         int arrayTwo[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+
         int arrayUnificating2[] = Utils.arrayConcat(arrayOne, arrayTwo);
         System.out.println(Arrays.toString(arrayUnificating2));
 

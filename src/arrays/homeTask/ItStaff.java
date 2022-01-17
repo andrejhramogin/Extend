@@ -1,6 +1,6 @@
 package arrays.homeTask;
 
-public class Staff {
+public class ItStaff implements IStaff{
     //TODO add properties name, age, salaryRate, grade. Properties are private, access throught setters and getters.
     private String lastName;
     private String firstName;
@@ -8,7 +8,7 @@ public class Staff {
     private float salaryRate;
     private int grade;
 
-    public Staff(String lastName, String firstName, int age, float salaryRate, int grade) {
+    public ItStaff(String lastName, String firstName, int age, float salaryRate, int grade) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.age = age;
@@ -56,4 +56,7 @@ public class Staff {
         grade = newGrade;
     }
 
+    public void doSomething(){
+        System.out.println(firstName + " work");
+    }
 }

@@ -61,7 +61,7 @@ public class Company {
     }
 
     public String popularStaffName() {
-        int counter = 0;
+        int counter;
         int popularNameCounter = 1;
         String popularName = null;
 
@@ -78,18 +78,25 @@ public class Company {
             if (counter > popularNameCounter) {
                 popularNameCounter = counter;
                 popularName = currentName;
-            }
-
-            else {
+            } else {
                 popularName = "All names are different.";
             }
         }
 
         return popularName;
     }
-//
-//    public int averageNameLength() {
-//
-//    }
 
+    public float averageNameLength() {
+        float averageNameLength;
+        float totalLengthOfNames = 0;
+        int currentNameLength;
+
+        for (int i = 0; i < companyStaff.length; i++) {
+            currentNameLength = companyStaff[i].getFirstName().length();
+            totalLengthOfNames += currentNameLength;
+        }
+
+        averageNameLength = totalLengthOfNames/companyStaff.length;
+        return averageNameLength;
+    }
 }

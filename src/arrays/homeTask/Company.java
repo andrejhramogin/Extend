@@ -2,19 +2,23 @@ package arrays.homeTask;
 
 public class Company {
 
-    private ItStaff[] companyStaff;
+    private Staff[] companyStaff;
     private String companyName;
 
 
-    public Company(ItStaff[] companyStaff) {
+    public Company(Staff[] companyStaff) {
         this.companyStaff = companyStaff;
     }
 
-    public ItStaff[] getCompanyStaff() {
+    public Company(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public Staff[] getCompanyStaff() {
         return companyStaff;
     }
 
-    public void setCompanyStaff(ItStaff[] companyStaff) {
+    public void setCompanyStaff(Staff[] companyStaff) {
         this.companyStaff = companyStaff;
     }
 
@@ -45,14 +49,20 @@ public class Company {
         return averageStaffAge;
     }
 
-    //
-//    public float averageStaffSalary() {
-//
-//    }
-//
+
+    public float averageStaffSalary() {
+        float averageStaffSalary;
+        float sumSalary = 0;
+        for (int i = 0; i < companyStaff.length; i++) {
+            sumSalary = sumSalary + companyStaff[i].getSalaryRate();
+        }
+        averageStaffSalary = sumSalary / companyStaff.length;
+        return averageStaffSalary;
+    }
+
     public String popularStaffName() {
         int counter = 0;
-        int popularNameCounter= 0;
+        int popularNameCounter = 1;
         String popularName = null;
 
         for (int i = 0; i < companyStaff.length; i++) {
@@ -65,9 +75,13 @@ public class Company {
                 }
             }
 
-            if (counter>popularNameCounter){
+            if (counter > popularNameCounter) {
                 popularNameCounter = counter;
                 popularName = currentName;
+            }
+
+            else {
+                popularName = "All names are different.";
             }
         }
 

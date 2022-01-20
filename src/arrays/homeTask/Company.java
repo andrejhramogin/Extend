@@ -61,25 +61,23 @@ public class Company {
     }
 
     public String popularStaffName() {
-        int counter;
+
         int popularNameCounter = 1;
-        String popularName = null;
+        String popularName = "None of the names are more popular than the others.";
 
         for (int i = 0; i < companyStaff.length; i++) {
-            String currentName = companyStaff[i].getFirstName();
-            counter = 0;
+            String currentName_i = companyStaff[i].getFirstName();
+
+            int counter = 0;
             for (int j = 0; j < companyStaff.length; j++) {
-                String name = companyStaff[j].getFirstName();
-                if (currentName == name) {
+                String currentName_j = companyStaff[j].getFirstName();
+                if (currentName_i == currentName_j) {
                     counter++;
                 }
             }
 
             if (counter > popularNameCounter) {
-                popularNameCounter = counter;
-                popularName = currentName;
-            } else {
-                popularName = "All names are different.";
+                popularName = currentName_i;
             }
         }
 
@@ -96,7 +94,7 @@ public class Company {
             totalLengthOfNames += currentNameLength;
         }
 
-        averageNameLength = totalLengthOfNames/companyStaff.length;
+        averageNameLength = totalLengthOfNames / companyStaff.length;
         return averageNameLength;
     }
 }

@@ -14,6 +14,5 @@ public class Eagle implements Animal{
 
     @Override
     public void doBreed(){
-
     }
 }

@@ -1,6 +1,10 @@
 package arrays.homeTask.animal;
 
-public class Eagle implements Animal{
+public class Eagle extends Species implements Animal{
+
+    public Eagle(String speciesName){
+        super(speciesName);
+    }
 
     @Override
     public void doSound(){

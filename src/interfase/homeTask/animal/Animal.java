@@ -1,4 +1,4 @@
-package arrays.homeTask.animal;
+package interfase.homeTask.animal;
 
 public interface Animal {
 

@@ -1,8 +1,10 @@
 package interfase.homeTask.animal;
 
+import interfase.homeTask.food.Food;
+
 public interface Animal {
 
     void doSound();
-    void doBreed();
-    void doFeed();
+    Species[] doBreed();
+    void doFeed(Food food);
 }

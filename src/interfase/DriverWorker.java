@@ -14,9 +14,14 @@ public class DriverWorker extends Person implements BaseWorker {
     @Override
     public void doRest(){
         driverSleep();
+        driverDrink();
     }
 
     public void driverSleep (){
         System.out.println("Driver " + getName() + " is sleeping");
+    }
+
+    public void driverDrink(){
+        System.out.println("Driver "+ getName()+" is drinking");
     }
 }

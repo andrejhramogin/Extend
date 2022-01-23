@@ -1,6 +1,6 @@
 package interfase.homeTask.animal;
 
-public class Species {
+public abstract class Species implements Animal {
 
     private String speciesName;
     private int speciesAge;

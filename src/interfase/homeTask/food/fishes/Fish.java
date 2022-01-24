@@ -7,7 +7,4 @@ public abstract class Fish extends Food {
     public Fish(String nameFood, int calories){
         super(nameFood, calories);
     }
-
-
-
 }

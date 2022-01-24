@@ -26,7 +26,7 @@ public class Lion extends Species implements Animal {
 
     @Override
     public void doFeed(Food food) {
-        System.out.println("Lion eat "+ food.getNameFood());
+        System.out.println("Lion eat " + food.getNameFood());
     }
 
     @Override

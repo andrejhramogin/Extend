@@ -1,5 +1,6 @@
 package interfase.homeTask.zoo;
 
+import interfase.homeTask.animal.Elephant;
 import interfase.homeTask.animal.Species;
 import interfase.homeTask.food.Food;
 import interfase.homeTask.food.fishes.Kilka;
@@ -28,6 +29,7 @@ public class Zoo {
         openZoo();
         cleaning();
         feeding();
+        sounding();
         breeding();
     }
 
@@ -48,11 +50,18 @@ public class Zoo {
         }
     }
 
+    private void sounding(){
+        for (int i = 0; i< pets.length; i++){
+            Species pet = pets[i];
+            pet.doSound();
+        }
+    }
+
     private void breeding(){
         for (int i = 0; i< pets.length; i++){
             Species pet = pets[i];
             pet.doBreed();
-            System.out.println("Was born new "+ );
+                 System.out.println("Was born new " + pet.getBabyName());
         }
     }
 }

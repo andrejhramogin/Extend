@@ -13,6 +13,10 @@ public class Elephant extends Species implements Animal {
         this.petsName = petsName;
     }
 
+    public Elephant (String speciesName , String babyName){
+        super(speciesName, babyName);
+    }
+
     public String getPetsName() {
         return petsName;
     }
@@ -22,7 +26,7 @@ public class Elephant extends Species implements Animal {
     }
 
     public void doSound() {
-        System.out.println("Uuuuuu!");
+        System.out.println("Elephant trumpets: Uuuuuu!");
     }
 
     public void doFeed(Food food) {
@@ -30,7 +34,7 @@ public class Elephant extends Species implements Animal {
     }
 
     public Species[] doBreed() {
-        Species[] babyes = new Species[]{new Elephant("African elephant", 0,"Baby elephant")};
+        Species[] babyes = {new Elephant("African elephant","Baby elephant")};
         return babyes;
     }
 }

@@ -21,7 +21,7 @@ public class Lion extends Species implements Animal {
 
     @Override
     public void doSound() {
-        System.out.println("Rrrrrrrr");
+        System.out.println("lion roars: Rrrrrrrr");
     }
 
     @Override

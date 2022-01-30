@@ -21,7 +21,7 @@ public class Eagle extends Species implements Animal {
 
     @Override
     public void doSound() {
-        System.out.println("Kli Kli");
+        System.out.println("Eagle screaming: Kli Kli");
     }
 
     @Override

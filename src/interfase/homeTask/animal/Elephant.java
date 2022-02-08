@@ -1,7 +1,7 @@
 package interfase.homeTask.animal;
 
 import interfase.homeTask.food.Food;
-import interfase.homeTask.food.vegetables.Carrot;
+
 
 public class Elephant extends Species implements Animal {
 
@@ -25,14 +25,17 @@ public class Elephant extends Species implements Animal {
         petsName = newPetsName;
     }
 
+    @Override
     public void doSound() {
         System.out.println("Elephant trumpets: Uuuuuu!");
     }
 
+    @Override
     public void doFeed(Food food) {
         System.out.println("Elephant " + "\"" + getPetsName() + "\"" + " eating " + food.getNameFood());
     }
 
+    @Override
     public Species[] doBreed() {
         Species[] babyes = {new Elephant("African elephant","Baby elephant")};
         return babyes;

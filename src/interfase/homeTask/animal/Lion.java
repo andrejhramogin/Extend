@@ -1,14 +1,19 @@
 package interfase.homeTask.animal;
 
 import interfase.homeTask.food.Food;
+import interfase.homeTask.food.meat.Beef;
+import interfase.homeTask.food.meat.Pork;
 
 public class Lion extends Species implements Animal {
+
+    private static final Food[] LION_FOOD = new Food[]{new Pork(), new Beef()};
 
     private String petsName;
 
     public Lion(String speciesName, int age, String petsName) {
-        super(speciesName, age);
+        super(speciesName, age, LION_FOOD);
         this.petsName = petsName;
+
     }
 
     public String getPetsName() {
